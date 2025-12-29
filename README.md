@@ -3,7 +3,9 @@
 A **full-stack Learning Management System (LMS)** built using **Spring Boot** for the backend and **React** for the frontend.  
 This project demonstrates **real-world full-stack development**, including REST APIs, role-based access, and modern frontend integration.
 
+
 ---
+
 
 ## 🚀 Features
 
@@ -18,7 +20,9 @@ This project demonstrates **real-world full-stack development**, including REST 
   - Enroll in courses
   - View course content
 
+
 ---
+
 
 ## 🧑‍💻 Tech Stack
 
@@ -36,7 +40,9 @@ This project demonstrates **real-world full-stack development**, including REST 
 - HTML5 & CSS3
 - Axios (API communication)
 
+
 ---
+
 
 ## 📁 Project Structure
 
@@ -55,7 +61,10 @@ LMS-FullStack/
 │
 └── README.md
 
+
+
 ---
+
 
 ## ⚙️ Setup Instructions
 
@@ -73,7 +82,9 @@ LMS-FullStack/
    ```bash
    http://localhost:8080
 
+
 ---
+
 
 ## 🎨 Frontend Setup (React)
 
@@ -93,12 +104,14 @@ LMS-FullStack/
    ```bash
    http://localhost:3000
 
-   ---
+
+---
+
 
 ## 🔗 API Integration
 
 - Frontend communicates with backend via REST APIs
-- CORS configured in Spring Boot
+- **CORS** configured in Spring Boot
 
 ---
 
@@ -114,7 +127,9 @@ Spring Boot Backend
       |
    Database
 
+
 ---
+
 
 ## 📌 Future Enhancements
 
@@ -124,7 +139,9 @@ Spring Boot Backend
 - Admin dashboard analytics
 - Docker deployment
 
+
 ---
+
 
 ## Author
 ## 👩‍💻 Author
