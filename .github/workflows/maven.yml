@@ -16,8 +16,8 @@ on:
 
 jobs:
   backend:
-    name: Backend - Spring Boot Build
     runs-on: ubuntu-latest
+    name: Backend - Spring Boot
 
     steps:
       - uses: actions/checkout@v4
@@ -28,13 +28,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build backend with Maven
-        working-directory: backend/lms-backend
+      - name: Build backend
         run: mvn clean verify
+        working-directory: backend/lms-backend
 
   frontend:
-    name: Frontend - React Build
     runs-on: ubuntu-latest
+    name: Frontend - React
 
     steps:
       - uses: actions/checkout@v4
@@ -45,9 +45,9 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        working-directory: frontend/lms_frontend
         run: npm install
+        working-directory: frontend/lms_frontend
 
       - name: Build frontend
+        run: npm run build --if-present
         working-directory: frontend/lms_frontend
-        run: npm run build
