@@ -71,14 +71,17 @@ LMS-FullStack/
 ### 🔧 Backend Setup (Spring Boot)
 
 1. Navigate to backend:
+   
    ```bash
    cd backend/lms-backend
 
 2. Run the application:
+   
     ```bash
     mvn spring-boot:run
 
 3. Backend runs on:
+   
    ```bash
    http://localhost:8080
 
@@ -89,18 +92,22 @@ LMS-FullStack/
 ## 🎨 Frontend Setup (React)
 
 1. Navigate to frontend:
+   
    ```bash
    cd frontend/lms_frontend
 
 2. Install dependencies:
+   
    ```bash
    npm install
    
 3.  Start frontend:
+   
     ```bash
     npm start
    
 4. Frontend runs on:
+   
    ```bash
    http://localhost:3000
 
@@ -117,15 +124,14 @@ LMS-FullStack/
 
 ## Architecture Overview
 
-   
 React Frontend
-      |
-      |  REST API (JSON)
-      |
+↓
+REST API (JSON)
+↓
 Spring Boot Backend
-      |
-      |
-   Database
+↓
+Database
+
 
 
 ---
