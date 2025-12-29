@@ -40,3 +40,98 @@ This project demonstrates **real-world full-stack development**, including REST 
 
 ## 📁 Project Structure
 
+LMS-FullStack/
+├── backend/
+│ └── lms-backend/
+│ ├── src/main/java
+│ ├── src/main/resources
+│ └── pom.xml
+│
+├── frontend/
+│ └── lms_frontend/
+│ ├── src/
+│ ├── public/
+│ └── package.json
+│
+└── README.md
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🔧 Backend Setup (Spring Boot)
+
+1. Navigate to backend:
+   ```bash
+   cd backend/lms-backend
+
+2. Run the application:
+    ```bash
+    mvn spring-boot:run
+
+3. Backend runs on:
+   ```bash
+   http://localhost:8080
+
+---
+
+## 🎨 Frontend Setup (React)
+
+1. Navigate to frontend:
+   ```bash
+   cd frontend/lms_frontend
+
+2. Install dependencies:
+   ```bash
+   npm install
+   
+3.  Start frontend:
+    ```bash
+    npm start
+   
+4. Frontend runs on:
+   ```bash
+   http://localhost:3000
+
+   ---
+
+## 🔗 API Integration
+
+- Frontend communicates with backend via REST APIs
+- CORS configured in Spring Boot
+
+---
+
+## Architecture Overview
+
+   
+React Frontend
+      |
+      |  REST API (JSON)
+      |
+Spring Boot Backend
+      |
+      |
+   Database
+
+---
+
+## 📌 Future Enhancements
+
+- Authentication & Authorization (JWT, Spring Security)
+- Course progress tracking
+- Assignments & quizzes
+- Admin dashboard analytics
+- Docker deployment
+
+---
+
+## Author
+## 👩‍💻 Author
+
+**Preeti Sunar**  
+Full-Stack Developer specializing in **Java, Spring Boot, and React**
+
+- 🔗 GitHub: [3Preeti](https://github.com/3Preeti)
+
+
