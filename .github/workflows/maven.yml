@@ -29,12 +29,13 @@ jobs:
           distribution: 'temurin'
 
       - name: Make Maven wrapper executable
-        run: chmod +x mvnw
         working-directory: backend/lms-backend
+        run: chmod +x mvnw
 
       - name: Build backend (skip tests)
-        run: ./mvnw clean package -DskipTests
         working-directory: backend/lms-backend
+        run: ./mvnw clean package -DskipTests
+
 
   frontend:
     name: Frontend - React
@@ -43,22 +44,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check frontend exists
+      - name: Check if frontend exists
+        id: check_frontend
         run: |
-          if [ ! -f frontend/lms_frontend/package.json ]; then
-            echo "Frontend not ready yet, skipping"
-            exit 0
+          if [ -f frontend/lms_frontend/package.json ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Set up Node.js
+        if: steps.check_frontend.outputs.exists == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install frontend dependencies
+        if: steps.check_frontend.outputs.exists == 'true'
         working-directory: frontend/lms_frontend
+        run: npm install
 
       - name: Build frontend
-        run: npm run build
+        if: steps.check_frontend.outputs.exists == 'true'
         working-directory: frontend/lms_frontend
+        run: npm run build
