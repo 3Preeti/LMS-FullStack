@@ -1,5 +1,7 @@
 # 🎓 LMS-FullStack (Learning Management System)
 
+[![LMS Fullstack CI](https://github.com/3Preeti/LMS-FullStack/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/3Preeti/LMS-FullStack/actions/workflows/maven.yml)
+
 A **full-stack Learning Management System (LMS)** built using **Spring Boot** for the backend and **React** for the frontend.  
 This project demonstrates **real-world full-stack development**, including REST APIs, role-based access, and modern frontend integration.
 
