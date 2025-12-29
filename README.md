@@ -122,16 +122,10 @@ LMS-FullStack/
 
 ---
 
-## Architecture Overview
 
-React Frontend
-↓
-REST API (JSON)
-↓
-Spring Boot Backend
-↓
-Database
+## 🏗 Architecture Overview
 
+**React Frontend** → **REST API (JSON)** → **Spring Boot Backend** → **Database**
 
 
 ---
