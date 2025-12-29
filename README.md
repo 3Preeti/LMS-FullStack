@@ -44,28 +44,6 @@ This project demonstrates **real-world full-stack development**, including REST 
 ---
 
 
-## 📁 Project Structure
-
-LMS-FullStack/
-├── backend/
-│ └── lms-backend/
-│ ├── src/main/java
-│ ├── src/main/resources
-│ └── pom.xml
-│
-├── frontend/
-│ └── lms_frontend/
-│ ├── src/
-│ ├── public/
-│ └── package.json
-│
-└── README.md
-
-
-
----
-
-
 ## ⚙️ Setup Instructions
 
 ### 🔧 Backend Setup (Spring Boot)
