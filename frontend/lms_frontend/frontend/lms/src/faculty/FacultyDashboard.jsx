@@ -254,14 +254,14 @@ const FacultyDashboard = () => {
 
 
 const styles = {
-  shell: { display: "flex", minHeight: "100vh", background: "#f5f7fb", fontFamily: "Inter, Poppins, system-ui, -apple-system, 'Segoe UI', sans-serif", color: "#0f172a" },
-  sidebar: { width: "260px", background: "#ffffff", color: "#1e293b", padding: "24px 18px", display: "flex", flexDirection: "column", gap: "24px", borderRight: "1px solid #e2e8f0", boxShadow: "0 6px 20px rgba(15,23,42,0.06)" },
+  shell: { display: "flex", minHeight: "100vh", width: "100%", background: "#f5f7fb", fontFamily: "Inter, Poppins, system-ui, -apple-system, 'Segoe UI', sans-serif", color: "#0f172a", paddingLeft: "260px", boxSizing: "border-box" },
+  sidebar: { position: "fixed", top: 0, left: 0, height: "100vh", width: "260px", background: "#ffffff", color: "#1e293b", padding: "24px 18px", display: "flex", flexDirection: "column", gap: "24px", borderRight: "1px solid #e2e8f0", boxShadow: "0 6px 20px rgba(15,23,42,0.06)", overflowY: "auto", zIndex: 10 },
   logoBox: { height: "60px", borderRadius: "14px", background: "linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: "20px", boxShadow: "0 10px 24px rgba(37,78,216,0.25)" },
   nav: { display: "flex", flexDirection: "column", gap: "8px" },
   navItem: { display: "flex", alignItems: "center", gap: "12px", padding: "12px 14px", borderRadius: "12px", background: "transparent", color: "#1e293b", cursor: "pointer", fontWeight: 600, fontSize: "14px", transition: "all 0.2s ease", borderLeft: "4px solid transparent" },
   navItemHover: { background: "#EAF2FF", color: "#1E40AF", borderLeft: "4px solid #2563EB" },
   navIcon: { fontSize: "18px" },
-  mainWrapper: { flex: 1, display: "flex", flexDirection: "column" },
+  mainWrapper: { flex: 1, display: "flex", flexDirection: "column", minHeight: "100vh", width: "100%" },
   topNav: { background: "#ffffff", borderBottom: "1px solid #e2e8f0", padding: "18px 28px", display: "flex", justifyContent: "space-between", alignItems: "center", boxShadow: "0 6px 20px rgba(15,23,42,0.06)" },
   topNavLeft: { display: "flex", alignItems: "center", gap: 16 },
   pageTitle: { margin: 0, fontSize: 20, fontWeight: 800, color: "#0f172a" },
@@ -277,7 +277,7 @@ const styles = {
   profileBtn: { display: "flex", alignItems: "center", gap: 10, cursor: "pointer", padding: "8px 10px", borderRadius: "12px", background: "#f8fafc", border: "1px solid #e2e8f0" },
   avatar: { width: 36, height: 36, borderRadius: "12px", background: "#1d4ed8", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700 },
   dropdownItem: { padding: "12px 16px", cursor: "pointer", fontSize: 13, borderBottom: "1px solid #f1f5f9", transition: "background 0.2s", color: "#0f172a" },
-  main: { flex: 1, padding: "28px 28px", overflow: "auto" },
+  main: { flex: 1, padding: "28px 28px", overflowY: "auto" },
   statsGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))", gap: 16, marginBottom: 24 },
   statCard: { background: "#ffffff", borderRadius: "16px", padding: "20px", boxShadow: "0 12px 30px rgba(15,23,42,0.08)", display: "flex", gap: 16, border: "1px solid #e2e8f0" },
   statIcon: { fontSize: 40 },
