@@ -1,4 +1,4 @@
-/**package com.lms.backend.config;
+package com.lms.backend.config;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +11,7 @@ import com.lms.backend.repository.RoleRepository;
 import com.lms.backend.repository.UserRepository;
 
 @Component
-public class DataTestRunner implements CommandLineRunner{
+public class DataTestRunner implements CommandLineRunner {
 
     @Autowired
     private RoleRepository roleRepository;
@@ -21,7 +21,8 @@ public class DataTestRunner implements CommandLineRunner{
 
     @Override
     public void run(String... args) {
-
+        // Only create default user if no users exist
+        if (userRepository.count() == 0) {
             Role role = roleRepository.findByRoleName("ADMIN")
                     .orElseGet(() -> roleRepository.save(new Role("ADMIN")));
 
@@ -34,6 +35,9 @@ public class DataTestRunner implements CommandLineRunner{
 
             userRepository.save(user);
 
-            System.out.println("✅ User saved successfully");
-        };
-    }**/
+            System.out.println("✅ Default user created successfully");
+        } else {
+            System.out.println("✅ Database already has users, skipping default user creation");
+        }
+    }
+}

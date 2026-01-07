@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import api from "../api/axiosConfig";
+import api from "../api/axios";
 import { colors, shadows, radius } from "../ui/theme";
 
 const ManageCourseContent = () => {

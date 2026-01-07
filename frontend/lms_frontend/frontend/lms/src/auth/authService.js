@@ -1,20 +1,13 @@
-import axios from "axios";
-
-const API_URL = "http://localhost:8080/auth";
+import axiosInstance from "../api/axios";
 
 export const login = async (email, password) => {
   if (!email || !password) {
     throw new Error("Email and password are required");
   }
 
-  const response = await axios.post(
-    `${API_URL}/login`,
-    { email, password },
-    {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
+  const response = await axiosInstance.post(
+    "/auth/login",
+    { email, password }
   );
 
   // Backend response
