@@ -14,22 +14,16 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import static org.springframework.security.config.Customizer.withDefaults;
+//import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 public class SecurityConfig {
 
-    // =========================
-    // Password Encoder
-    // =========================
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    // =========================
-    // Authentication Manager
-    // =========================
     @Bean
     public AuthenticationManager authenticationManager(
             AuthenticationConfiguration configuration
@@ -37,16 +31,18 @@ public class SecurityConfig {
         return configuration.getAuthenticationManager();
     }
 
-    // =========================
-    // CORS CONFIGURATION (CRITICAL)
-    // =========================
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration config = new CorsConfiguration();
 
         // Frontend origin (Vite)
-        config.setAllowedOriginPatterns(List.of("http://localhost:5174"));
+       // config.setAllowedOriginPatterns(List.of("http://localhost:5174"));
+
+        config.setAllowedOriginPatterns(List.of(
+        	    "http://localhost:5173",
+        	    "http://localhost:5174"
+        	));
 
         // Allowed HTTP methods
         config.setAllowedMethods(
@@ -67,21 +63,24 @@ public class SecurityConfig {
         return source;
     }
 
-    // =========================
-    // SECURITY FILTER CHAIN
-    // =========================
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http)
             throws Exception {
 
         http
-            .cors(withDefaults())          // ✅ ENABLE CORS
-            .csrf(csrf -> csrf.disable())  // ✅ DISABLE CSRF (JWT)
+            .cors(cors -> {})
+            .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/**").permitAll() // ✅ PUBLIC
+                // 🔥 ALLOW PREFLIGHT REQUESTS
+                .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+                
+                // 🔥 ALLOW AUTH ENDPOINTS
+                .requestMatchers("/auth/**").permitAll()
+
                 .anyRequest().authenticated()
             );
 
         return http.build();
     }
+
 }
