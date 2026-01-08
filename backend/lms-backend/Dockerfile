@@ -1,13 +1,12 @@
-# Use lightweight Java runtime
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:17-jdk-alpine
 
-# App directory
 WORKDIR /app
 
-# Copy JAR from Maven build
-COPY target/*.jar app.jar
+COPY . .
 
-# Expose Spring Boot port
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
+
 EXPOSE 8080
-# Run application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+
+CMD ["java", "-jar", "target/*.jar"]
+
