@@ -126,9 +126,8 @@ This project demonstrates **real-world full-stack development**, including REST 
 ##  👩‍💻 Author
 
 **Preeti Sunar** 
-ORCID: [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4042--835X-green)](https://orcid.org/0009-0000-4042-835X)
-Full-Stack Developer specializing in **Java, Spring Boot, and React**
-
+- ORCID: [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4042--835X-green)](https://orcid.org/0009-0000-4042-835X)
+- Full-Stack Developer specializing in **Java, Spring Boot, and React**
 - 🔗 GitHub: [3Preeti](https://github.com/3Preeti)
 
 ## Citation 
