@@ -140,12 +140,14 @@ This project demonstrates **real-world full-stack development**, including REST 
 A full-stack Learning Management System built using Spring Boot and React, designed to manage courses, users, and learning workflows efficiently.
 
 **Download Paper:**  
-[Download PDF](./your-paper.pdf)
+[Download PDF](./paperpublication.pdf)
 
 **DOI:**  
-https://doi.org/10.xxxx/zenodo.xxxxx
+https://doi.org/10.5281/zenodo.19689009
+
 
 ---
 
 ## Citation 
-- [![DOI](https://zenodo.org/badge/10.5281/zenodo.19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
+
