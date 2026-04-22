@@ -130,5 +130,22 @@ This project demonstrates **real-world full-stack development**, including REST 
 - Full-Stack Developer specializing in **Java, Spring Boot, and React**
 - 🔗 GitHub: [3Preeti](https://github.com/3Preeti)
 
+---
+
+## 📄 Paper Publication
+
+**Title:** LMS-FullStack: LMS - THE BRAND  
+
+**Abstract:**  
+A full-stack Learning Management System built using Spring Boot and React, designed to manage courses, users, and learning workflows efficiently.
+
+**Download Paper:**  
+[Download PDF](./your-paper.pdf)
+
+**DOI:**  
+https://doi.org/10.xxxx/zenodo.xxxxx
+
+---
+
 ## Citation 
- [![DOI](https://zenodo.org/badge/10.5281/zenodo.19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
+- [![DOI](https://zenodo.org/badge/10.5281/zenodo.19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
