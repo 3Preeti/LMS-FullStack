@@ -131,4 +131,5 @@ Full-Stack Developer specializing in **Java, Spring Boot, and React**
 
 - 🔗 GitHub: [3Preeti](https://github.com/3Preeti)
 
-
+## Citation 
+ https://doi.org/10.5281/zenodo.19689009
