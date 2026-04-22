@@ -131,4 +131,4 @@ This project demonstrates **real-world full-stack development**, including REST 
 - 🔗 GitHub: [3Preeti](https://github.com/3Preeti)
 
 ## Citation 
- [![DOI](https://zenodo.org/badge/19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
+ [![DOI](https://zenodo.org/badge/10.5281/zenodo.19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
