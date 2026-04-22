@@ -148,6 +148,7 @@ https://doi.org/10.5281/zenodo.19689009
 
 ---
 
-## Citation 
-- [![DOI](https://zenodo.org/badge/github/3Preeti/LMS-FullStack.svg)](https://doi.org/10.5281/zenodo.19689009)
+## 📚 Citation 
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19689009.svg)](https://doi.org/10.5281/zenodo.19689009)
+
 
