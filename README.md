@@ -134,7 +134,7 @@ This project demonstrates **real-world full-stack development**, including REST 
 
 ## 📄 Paper Publication
 
-**Title:** LMS-FullStack: LMS - THE BRAND  
+**Title:** LMS-FullStack: LMS - Learning Platform
 
 **Abstract:**  
 A full-stack Learning Management System built using Spring Boot and React, designed to manage courses, users, and learning workflows efficiently.
